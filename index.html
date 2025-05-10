@@ -4,6 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domínio Pronto – Seu site pronto para vender</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Venda sites profissionais em poucos dias com Domínio Pronto. Entregamos design responsivo, SEO otimizado e suporte VIP.">
+  <meta name="keywords" content="sites, venda de sites, design responsivo, SEO, Domínio Pronto">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cauasbl.github.io/dominio-pronto/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Domínio Pronto – Sites Prontos para Vender">
+  <meta property="og:description" content="Sites profissionais, rápidos e otimizados para SEO. Tenha seu site no ar em até 7 dias!">
+  <meta property="og:url" content="https://cauasbl.github.io/dominio-pronto/">
+  <meta property="og:image" content="https://cauasbl.github.io/dominio-pronto/assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Domínio Pronto",
+    "url": "https://cauasbl.github.io/dominio-pronto/",
+    "logo": "https://cauasbl.github.io/dominio-pronto/assets/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-11-99999-9999",
+      "contactType": "Customer Service",
+      "availableLanguage": "Portuguese"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://cauasbl.github.io/dominio-pronto/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://cauasbl.github.io/dominio-pronto/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z5TG72EY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}    
+    gtag('js', new Date());
+    gtag('config', 'G-S9Z5TG72EY');
+  </script>
+
   <style>
     :root {
       --primary-color: #0066CC;
@@ -52,7 +105,6 @@
     .footer-links { display:flex; justify-content:center; list-style:none; gap:1rem; margin-top:1rem; }
     .footer-links a { color:var(--primary-color); text-decoration:none; }
 
-    /* WhatsApp Floating Button */
     .whatsapp-float { position:fixed; width:60px; height:60px; bottom:40px; right:40px; background-color:#25d366; color:#fff; border-radius:50px; text-align:center; font-size:30px; box-shadow:2px 2px 3px var(--card-shadow); z-index:100; }
     .whatsapp-float i { margin-top:16px; }
 
@@ -146,7 +198,7 @@
 
   <section class="container" id="contato">
     <h2 style="text-align:center; color:var(--primary-color);">Contato / Orçamento</h2>
-    <form action="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20gostaria%20de%20um%20orçamento%20para%20um%20site" method="get" class="contact-form">
+    <form action="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site" method="get" class="contact-form">
       <div class="form-group">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" required>
@@ -168,11 +220,13 @@
         <label for="descricao">Descrição do Negócio</label>
         <textarea id="descricao" name="descricao" rows="4"></textarea>
       </div>
-      <button type="submit" class="btn-cta">Enviar via WhatsApp</button>
+      <button id="btn-whatsapp" type="submit" class="btn-cta">
+        Enviar via WhatsApp
+      </button>
     </form>
   </section>
 
-  <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20gostaria%20de%20um%20site%20com%20vocês" class="whatsapp-float" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1,%20gostaria%20de%20um%20site%20com%20voc%C3%AAs" class="whatsapp-float" target="_blank">
     <i>🟢</i>
   </a>
 
