@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://cauasbl.github.io/dominio-pronto/sitemap.xml
